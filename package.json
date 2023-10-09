@@ -1,0 +1,38 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:api": "ts-node ./api/main.ts",
+    "build:api": "tsc -p tsconfig.api.json",
+    "start:api": "node ./dist/api/main.js",
+    "dev:app": "tsc -p tsconfig.app.json",
+    "build:app": "tsc -p tsconfig.app.json",
+    "start:app": "tsc -p tsconfig.app.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fastify/swagger": "^8.11.0",
+    "@rushstack/eslint-patch": "^1.5.1",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/lodash": "^4.14.199",
+    "@types/node": "^20.8.3",
+    "@vue/tsconfig": "^0.4.0",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@fastify/swagger-ui": "^1.10.0",
+    "fastify": "^4.23.2",
+    "fastify-type-provider-zod": "^1.1.9",
+    "lodash": "^4.17.21",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "zod": "^3.22.4"
+  }
+}
